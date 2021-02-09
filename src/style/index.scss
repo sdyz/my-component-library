@@ -1,0 +1,35 @@
+// 说明：所有组件样式，统一引入
+
+// config
+@import "variables";
+
+//layout（相当于reset）
+@import "reboot";
+
+//mixin
+@import "mixin";
+
+// animation
+@import "animation";
+
+// button
+@import "../components/Button/style";
+
+// menu
+
+// @import "../components/Menu/style";
+
+// icon
+// @import "../components/Icon/style";
+
+//input
+// @import "../components/Input/style";
+
+//auto-complete
+// @import "../components/AutoComplete/style";
+
+//upload
+// @import "../components/Upload/style";
+
+//progress
+// @import "../components/Progress/style";
