@@ -8,17 +8,29 @@ import { Button } from "./Button";
 
 # Button
 
-## Properties
+## 使用说明
 
-<Props of={Button} />
-
-## Basic usage
+### 基础用法
 
 <Playground>
-  <Button btnType="primary"> primary button </Button>
+  <Button
+    btnType="primary"
+    onClick={() => {
+      console.log("onclick");
+    }}
+  >
+    button
+  </Button>
 </Playground>
 
-## Using different kinds
+### 不同尺寸的 Button
+
+<Playground>
+  <Button size="lg"> large button </Button>
+  <Button size="sm"> small button </Button>
+</Playground>
+
+### 不同类型的 Button
 
 <Playground>
   <Button btnType="danger"> danger button </Button>
@@ -26,3 +38,7 @@ import { Button } from "./Button";
     link button
   </Button>
 </Playground>
+
+## 属性
+
+<Props title="Button" of={Button} />

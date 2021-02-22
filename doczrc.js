@@ -1,5 +1,16 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  typescript: true,
-  files: ["./src/**/*.mdx"],
+  title: "React UI 组件库",
+  files: ["./src/**/*.{md,markdown,mdx}"],
+  ignore: [
+    "readme.md",
+    "changelog.md",
+    "code_of_conduct.md",
+    "contributing.md",
+    "license.md",
+  ], // Default
+  dest: "/dist", // Default process.env.DOCZ_DEST || ".docz/dist", Specify the output directory for docz build
+  typescript: true, // Default false. This option is used if you need to import Typescript components inside your .mdx files.
+  // menu: ["快速上手", "组件"],
+  port: 8888,
 };
