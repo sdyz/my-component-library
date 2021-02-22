@@ -1,0 +1,28 @@
+---
+name: Button
+menu: Components
+---
+
+import { Playground, Props } from "docz";
+import { Button } from "./Button";
+
+# Button
+
+## Properties
+
+<Props of={Button} />
+
+## Basic usage
+
+<Playground>
+  <Button btnType="primary"> primary button </Button>
+</Playground>
+
+## Using different kinds
+
+<Playground>
+  <Button btnType="danger"> danger button </Button>
+  <Button btnType="link" href="https://google.com">
+    link button
+  </Button>
+</Playground>

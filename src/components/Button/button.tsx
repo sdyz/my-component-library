@@ -1,5 +1,6 @@
 import React, { FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react'
 import classNames from 'classnames'
+import '../../style/index.scss'
 
 // 演示代码
 // export enum ButtonSize {
