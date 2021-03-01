@@ -1,12 +1,6 @@
 import React, { FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react'
 import classNames from 'classnames'
-import '../../style/index.scss'
 
-// 演示代码
-// export enum ButtonSize {
-//   Large = 'lg',
-//   Small = 'sm'
-// }
 export type ButtonSize = 'lg' | 'sm'
 
 export type ButtonType = 'primary' | 'default' | 'danger' | 'link'
@@ -29,14 +23,6 @@ type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
 // TS Utility Types : Partial 属性可选，并不是都有的
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
-/**
- * 页面中最常用的的按钮元素，适合于完成特定的交互
- * ### 引用方法
- * 
- * ~~~js
- * import { Button } from 'vikingship'
- * ~~~
- */
 export const Button: FC<ButtonProps> = (props) => {
   const {
     btnType,
@@ -49,7 +35,7 @@ export const Button: FC<ButtonProps> = (props) => {
   } = props;
 
   // 配置 classNames ： btn, btn-lg, btn-primary
-  // disable说明：button 默认支持disabled属性；但 a链接disable属性就要通过样式来控制了，所以添加到classname里
+  // disable说明：button 默认支持disabled属性；但 a 链接disable属性就要通过样式来控制了，所以添加到classname里
   const classes = classNames('btn', className, {
     [`btn-${btnType}`]: btnType,
     [`btn-${size}`]: size,
