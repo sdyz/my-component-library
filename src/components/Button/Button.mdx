@@ -1,0 +1,45 @@
+---
+name: Button
+menu: Components
+---
+
+import { Playground, Props } from "docz";
+import { Button } from "./Button";
+import "../../style/index.scss";
+
+# Button
+
+## 使用说明
+
+### 基础用法
+
+<Playground>
+  <Button
+    btnType="primary"
+    onClick={() => {
+      console.log("onclick");
+    }}
+  >
+    button
+  </Button>
+</Playground>
+
+### 不同尺寸的 Button
+
+<Playground>
+  <Button size="lg"> large button </Button>
+  <Button size="sm"> small button </Button>
+</Playground>
+
+### 不同类型的 Button
+
+<Playground>
+  <Button btnType="danger"> danger button </Button>
+  <Button btnType="link" href="https://google.com">
+    link button
+  </Button>
+</Playground>
+
+## 属性
+
+<Props title="Button" of={Button} />
